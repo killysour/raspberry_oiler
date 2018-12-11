@@ -37,9 +37,9 @@ def GPIO_init():
     # サービス停止のタイミングによってはGPIOが通電したままになるため、初期化
     GPIO.cleanup()
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(24, GPIO.OUT)
+    GPIO.setup(4, GPIO.OUT)
     
-    GPIO.output(24, False)
+    GPIO.output(4, False)
 
     GPIO.cleanup()
 
