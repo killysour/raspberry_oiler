@@ -33,7 +33,7 @@ def daemonize():
     pid = os.fork()
     # 親プロセス
     if pid > 0:
-        pid_file = open('/var/run/chainoiler.pid','w')
+        pid_file = open('/var/run/raspberry_oiler.pid','w')
         pid_file.write(str(pid)+"\n")
         pid_file.close()
         sys.exit()
