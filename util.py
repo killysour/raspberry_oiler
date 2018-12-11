@@ -24,7 +24,7 @@ def json_write(upd_json):
 
 def systemd_control(command):
     # オイラーサービスの制御
-    cmd = 'systemctl ' + command + ' chainoiler'
+    cmd = 'systemctl ' + command + ' raspberry_oiler'
 
     try:
         subprocess.check_call(cmd, shell=True)
